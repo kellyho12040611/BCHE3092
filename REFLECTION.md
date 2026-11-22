@@ -1,0 +1,5 @@
+Why does this app work?
+This app works because it applies the Beer-Lambert Law, which states that the absorbance of a solution is directly proportional to its concentration. In a Bradford Assay, the Coomassie dye binds to the protein, shifting its absorbance to 595 nm. By measuring known standard concentrations (BSA) and their absorbances, we can generate a standard curve. The app uses linear regression to find the line of best fit, represented by the equation y = mx + c (where y is absorbance and x is concentration). Because the R-squared value is very close to 1, we know the relationship is highly linear. By inputting the absorbance in the app, it can calcuated the protein concentration . 
+
+Limitation:
+The app relies on the assumption that the unknown sample falls within the linear range of the standard curve. If the unknown sample has a concentration higher than the highest standard, the assay is no longer linear, and the app will give an inaccurate reading. 
